@@ -71,12 +71,19 @@ header nav h1 a {
   letter-spacing: 10px;
   text-transform: uppercase;
 }
+
+.breadcrumb {
+  height: auto;
+  width: 100%;
+}
+
 #breadcrumb {
     padding: 10px 40px 16px;
     list-style: none;
     background-color: #eee;
     font-size: 17px;
     margin: 0;
+    width: 100%;
 }
 
 /* Display list items side by side */
@@ -156,10 +163,8 @@ header nav h1 a {
   display: block;
   margin: 0;
   max-width: 100%;
-  min-height: 248px;
-  min-width: 100%;
 }
-#restaurants-list li h1 {
+#restaurants-list li h2 {
   color: #f18200;
   font-family: Arial,sans-serif;
   font-size: 14pt;
@@ -308,12 +313,10 @@ header nav {
 #maincontent {
   grid-area: maincontent;
   background-color: #f3f3f3;
-  min-height: 100%;
   display: flex;
   flex-direction: column;
 }
 #map-container {
-  min-height: 400px;
   display: flex;
 }
 /*#filter-container {
@@ -409,7 +412,6 @@ header nav {
 
   #restaurant-list li {
    margin: 15px;
-   min-height: 380px;
    padding: 30px 25px;
    text-align: left;
  }
