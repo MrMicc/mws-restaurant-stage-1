@@ -316,6 +316,9 @@ header nav {
   display: flex;
   flex-direction: column;
 }
+
+
+
 #map-container {
   min-height: 400px;
   display: flex;
@@ -351,7 +354,9 @@ header nav {
 #restaurants-list li {
   justify-self: center;
 }*/
-#restaurant-container {
+
+
+/*#restaurant-container {
   display: grid;
   grid-template-rows: auto auto 1fr auto;
   grid-template-columns: 1fr 1fr;
@@ -360,7 +365,7 @@ header nav {
           "restaurant-img restaurant-address"
           "restaurant-img restaurant-hours"
           "restaurant-cuisine restaurant-hours";
-}
+}*/
 #restaurant-name {
   grid-area: restaurant-name;
 }
@@ -409,6 +414,24 @@ header nav {
    text-align: left;
  }
 
+  .grid-restuarant-map{
+    display: grid;
+    grid-template-rows: auto auto 1fr auto;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+            "restaurant-container"
+            "map-container"
+  }
+
+  #restaurant-container {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  #map-container {
+    grid-column: 2;
+  }
+
 }
 
 /*====================== tablets==============*/
@@ -416,6 +439,24 @@ header nav {
   #restaurants-list {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .grid-restuarant-map{
+    display: grid;
+    grid-template-rows: auto auto 1fr auto;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+            "restaurant-container"
+            "map-container"
+  }
+
+  #restaurant-container {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  #map-container {
+    grid-column: 2;
   }
 }
 
@@ -426,6 +467,24 @@ header nav {
   #restaurants-list {
     display: grid;
     grid-template-columns: 1fr 1fr;
+  }
+
+  .grid-restuarant-map{
+    display: grid;
+    grid-template-rows: auto auto 1fr auto;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+            "restaurant-container"
+            "map-container"
+  }
+
+  #restaurant-container {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  #map-container {
+    grid-column: 2;
   }
 
 }
@@ -454,7 +513,8 @@ header nav {
     #restaurant-cuisine {
         width: 100%;
     }
-    
+
+
 
 }
 
